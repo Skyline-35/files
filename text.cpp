@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 int main( )
@@ -7,7 +8,7 @@ int main( )
    short int a = -6730;
    float b = 68.123; 
    char c = 'J';
-   ofstream myOutFile{abc.txt};
+   ofstream myOutFile{"abc.txt"};
    
    if (myOutFile)
    myOutFile <<a<<" "<<b<<" "<<c;//display data to console (i.e. as formatted chars)
